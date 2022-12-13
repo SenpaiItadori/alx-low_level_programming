@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - print a random num
+ *
+ * Return: 0
  */
 int main(void)
 {
