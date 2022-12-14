@@ -3,15 +3,16 @@
 /**
  * print_last_digit - displays the last digit of y
  * @n: the initial num
- * @y: the last num
- * Return: y
+ * Return: last number
  */
 
 int print_last_digit(int n)
 {
-	int y;
+	int last;
 
-	y = n % 10;
-
-	return (y);
+	last = n % 10;
+	if (last < 0)
+		last = last * -1;
+	_putchar(last + '0');
+	return (last);
 }
