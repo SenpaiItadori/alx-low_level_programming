@@ -20,6 +20,8 @@ void print_number(int n)
 	}
 	i /= 10;
 	if (i != 0)
+	{
 		print_number(i);
+	}
 	putchar((unsigned int) n % 10 + '0');
 }
