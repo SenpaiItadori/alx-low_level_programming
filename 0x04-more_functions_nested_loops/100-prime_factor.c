@@ -10,13 +10,13 @@ int main(void)
 {
 	long i, maxf;
 	long num = 612852475143;
-	double square = sqrt(number);
+	double square = sqrt(num);
 
 	for(i = 1; i <= square; i++)
 	{
-		if(number % i == 0)
+		if(num % i == 0)
 		{
-			maxf = number / i;
+			maxf = num / i;
 		}
 	}
 	printf("%ld\n", maxf);
