@@ -21,7 +21,6 @@ void print_diagonal(int n)
 			putchar(92);
 			putchar(10);
 		}
-		putchar(10);
 	}
 	else
 		putchar(10);
