@@ -10,6 +10,18 @@
 
 void print_rev(char *str)
 {
+	int i;
+	char temp;
+	int length;
+	int midpoint;
 
-	puts(strrev(str));
+	length = strlen(str);
+	midpoint = length / 2;
+	for (i = 0; i < midpoint; i++)
+	{
+		temp =str[i];
+		str[i] = str[length - 1 - i];
+		str[length - 1 - i] = temp;
+	}
+	puts(str);
 }
