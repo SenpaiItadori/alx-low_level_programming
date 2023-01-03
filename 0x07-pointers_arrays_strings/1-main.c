@@ -14,7 +14,7 @@ void simple_print_buffer(char *buffer, unsigned int size)
 
 
 	i = 0;
-	whie (i < size)
+	while (i < size)
 	{
 		if (i % 10)
 		{
