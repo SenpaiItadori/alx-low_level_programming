@@ -10,20 +10,15 @@
 
 void _print_rev_recursion(char *s)
 {
-	int i;
-	int j;
-	char mid;
-	int k;
+	int i = strlen(s) - 1;
+	int j = i;
 
-	i = strlen(s);
-	j = i / 2;
-	k = 0;
-	k++;
-	if (k < j)
+	if (j < 0)
+		return;
+	if (j >= 0)
 	{
-		mid = s[k];
-		s[k] = s[i - k - 1];
-		s[i - k - 1] = mid;
+		putchar(s[j]);
+		j--;
+		_print_rev_recursion(s);
 	}
-	puts(s);
 }
