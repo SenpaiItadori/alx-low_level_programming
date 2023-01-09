@@ -8,13 +8,13 @@
  * Return: 0
  */
 
-int __attribute__ ((unused)) main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
+	(void)argv;
 
 	i = argc - 1;
 	printf("%d\n", i);
-	printf("%s\n", argv[0]);
 
 	return (0);
 }
