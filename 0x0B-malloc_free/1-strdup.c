@@ -11,20 +11,29 @@
 char *_strdup(char *str)
 {
 	char *yes;
-	int i;
-	int j;
+	unsigned int i;
+	unsigned int j;
 
 	j = 0;
+	i = 0;
 	if (str == NULL)
+	{
 		return (NULL);
+	}
 	while (str[j])
+	{
 		j++;
-	yes = malloc(sizeof(char) * (j + 1));
+		yes = malloc(sizeof(char) * (j + 1));
+	}
 
 	if (yes == NULL)
+	{
 		return (NULL);
+	}
 	while ((yes[i] = str[i]) != '\0')
+	{
 		i++;
+	}
 
 	return (yes);
 }
