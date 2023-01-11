@@ -23,7 +23,7 @@ char *argstostr(int ac, char **av)
 			n++;
 		n++;
 	}
-	yes = malloc(sizeof(char) * (n + 1);
+	yes = malloc(sizeof(char) * (n + 1));
 
 		if (yes == NULL)
 			return (NULL);
