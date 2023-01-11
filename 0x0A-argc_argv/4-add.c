@@ -16,18 +16,24 @@ int main(int argc, char *argv[])
 	int j;
 
 	j = 0;
-	if (argc >= 3)
+	i = 1;
+	if (argc >= 2)
 	{
-		for (i = 1; i < '\0'; i++)
+		for (i = 1; i < argc; i++)
 		{
+			if (!(atoi(argv[i])))
+			{
+				printf("Error\n");
+				return (1);
+			}
 			j = j + atoi(argv[i]);
 		}
 		printf("%d\n", j);
 	}
-	else
+	if (argc == 1)
 	{
-		printf("Error\n");
-		return (1);
+		printf("0\n");
 	}
+
 	return (0);
 }
