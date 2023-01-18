@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - exercutes a function given asa perameter on eaxh elem of array
+ * array_iterator - exercutes a function given asa perameter on eaxh elem o
  * @array: the array
  * @size: the size of an array
  * @action: the function pointer that exercutes
