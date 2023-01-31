@@ -12,6 +12,9 @@ void free_listint2(listint_t **head)
 	listint_t *curr = *head;
 	listint_t *ax;
 
+	if (curr == NULL)
+		return;
+
 	while (curr != NULL)
 	{
 		ax = curr;
