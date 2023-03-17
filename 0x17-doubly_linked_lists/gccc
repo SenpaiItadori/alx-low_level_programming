@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -Werror -pedantic -Wextra -std=gnu89 2-main.c 2-add_dnodeint.c 0-print_dlistint.c -o  c
+gcc -Wall -Werror -pedantic -Wextra -std=gnu89 3-main.c 3-add_dnodeint_end.c 0-print_dlistint.c -o  d
