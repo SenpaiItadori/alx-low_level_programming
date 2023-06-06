@@ -1,1 +1,0 @@
-Variadic functions , oh yeah!
