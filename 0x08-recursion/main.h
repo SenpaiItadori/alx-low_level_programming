@@ -2,7 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
-#include <unistd>
+#include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
 
