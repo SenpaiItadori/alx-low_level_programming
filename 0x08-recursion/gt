@@ -1,2 +1,2 @@
 #!/bin/bash
-git add . ; git commit -m 'The power of a number' ; git push
+git add . ; git commit -m 'The square root of a number' ; git push
