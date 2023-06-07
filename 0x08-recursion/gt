@@ -1,2 +1,2 @@
 #!/bin/bash
-git add . ; git commit -m 'In my dreams we all together' ; git push
+git add . ; git commit -m 'Dreams fell real while we in em' ; git push
