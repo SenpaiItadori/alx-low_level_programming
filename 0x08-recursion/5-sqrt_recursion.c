@@ -19,7 +19,7 @@ int _sqrt_recursion(int n)
  * Return: the natuarl square
  */
 
-int _sqrt(int i , int k)
+int _sqrt(int i, int k)
 {
 	int square = k * k;
 
