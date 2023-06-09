@@ -9,7 +9,8 @@
 
 int main(int argc, char *argv[])
 {
-	int iteration = 1, sum = 0;
+	int iteration = 1;
+	unsigned int sum = 0;
 
 	if (argc == 1)
 	{
