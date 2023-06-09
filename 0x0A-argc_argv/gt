@@ -1,2 +1,2 @@
 #!/bin/bash
-git add . ; git commit -m 'Neither irony nor sarcasm is argument' ; git push
+git add . ; git commit -m 'To infinity and beyond' ; git push
