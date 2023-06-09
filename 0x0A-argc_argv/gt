@@ -1,2 +1,2 @@
 #!/bin/bash
-git add . ; git commit -m 'The best argument against democracy is a five-minute conversation with the average voter' ; git push
+git add . ; git commit -m 'Neither irony nor sarcasm is argument' ; git push
