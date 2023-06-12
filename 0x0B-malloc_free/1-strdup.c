@@ -9,20 +9,23 @@
 char *_strdup(char *str)
 {
 	char *duplicate;
-	int iteration, sizeofstr;
+	int iteration, sizeofstr = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	sizeofstr = strlen(str);
-	duplicate = malloc(sizeof(sizeofstr));
+	while (str[sizeofstr])
+	{
+		sizeofstr++;
+	}
+	duplicate = malloc(sizeofstr + 1);
 
 	if (duplicate == NULL)
 	{
 		return (NULL);
 	}
 
-	for (iteration = 0; iteration < sizeofstr; iteration++)
+	for (iteration = 0; iteration < sizeofstr + 1; iteration++)
 	{
 		duplicate[iteration] = str[iteration];
 	}
