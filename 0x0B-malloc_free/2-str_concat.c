@@ -12,12 +12,10 @@ char *str_concat(char *s1, char *s2)
 	char *s3;
 	int iteration = 0, sizeofs3, s1_len;
 
-	if (s1 == NULL && s2 != NULL)
+	if (s1 == NULL)
 		s1 = "";
-	if (s1 != NULL && s2 == NULL)
+	if (s2 == NULL)
 		s2 = "";
-	if (s1 == NULL && s2 == NULL)
-		return ("");
 
 	s1_len = strlen(s1);
 	sizeofs3 = s1_len + strlen(s2) + 1;
