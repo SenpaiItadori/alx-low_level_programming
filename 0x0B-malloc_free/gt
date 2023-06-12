@@ -1,2 +1,2 @@
 #!/bin/bash
-git add . ; git commit -m 'Float like a butterfy, sting like a bee' ; git push
+git add . ; git commit -m 'The woman who has no imagination has no wings' ; git push
