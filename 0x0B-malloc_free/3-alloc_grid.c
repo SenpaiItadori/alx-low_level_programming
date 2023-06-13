@@ -9,44 +9,25 @@
 
 int **alloc_grid(int width, int height)
 {
-	int **Td_ints;
-	int i, j, k, y;
+	int i , j, **matrix;
 
-	if (width <= 0 || height <= 0)
+	if (width == 0 || height == 0)
 	{
 		return (NULL);
 	}
-
-	Td_ints = malloc(sizeof(int *) * height);
-
-	if (Td_ints == NULL)
+	matrix = malloc(sizeof(int*) * height);
+	for (i = 0; i < height; i++)
 	{
-		free(Td_ints);
-		return (NULL);
+		matrix[i] = (int*)malloc(sizeof(int) * width);
 	}
 
 	for (i = 0; i < height; i++)
 	{
-		Td_ints = malloc(sizeof(int) * width);
-
-		if (Td_ints[i] == NULL)
+		for (j = 0; j < width; j++)
 		{
-			for (j = i; j >= 0; j--)
-			{
-				free(Td_ints[j]);
-			}
-			free(Td_ints);
-			return(NULL);
+			matrix[i][j] = 0;
 		}
 	}
 
-	for (k = 0; k < height; k++)
-	{
-		for (y = 0; y < width; y++)
-		{
-			Td_ints[k][y] = 0;
-		}
-	}
-
-	return (Td_ints);
+	return (matrix);
 }
