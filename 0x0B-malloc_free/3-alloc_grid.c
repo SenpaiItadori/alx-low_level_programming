@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * alloc_gring - returns a pointer to a 2d array of ints
+ * alloc_grid - returns a pointer to a 2d array of ints
  * @width: columns of the array
  * @height: rows of the array
  * Return: a pointer to a 2d array or NULL if failed
@@ -9,20 +9,31 @@
 
 int **alloc_grid(int width, int height)
 {
-	int i , j, **matrix;
+	int i, j, **matrix;
 
 	if (width == 0 || height == 0)
 	{
 		return (NULL);
 	}
-	matrix = malloc(sizeof(int*) * height);
+	matrix = malloc(sizeof(int *) * height);
 
 	if (matrix == NULL)
+	{
+		free(matrix);
 		return (NULL);
+	}
 
 	for (i = 0; i < height; i++)
 	{
-		matrix[i] = (int*)malloc(sizeof(int) * width);
+		matrix[i] = (int *)malloc(sizeof(int) * width);
+
+		if (matrix[i] == NULL)
+		{
+			for (j = i; j == 0; j--)
+			{
+				free(matrix[j]);
+			}
+		}
 	}
 
 	for (i = 0; i < height; i++)
