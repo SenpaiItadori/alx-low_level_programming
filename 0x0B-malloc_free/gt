@@ -1,2 +1,2 @@
 #!/bin/bash
-git add . ; git commit -m 'If you even dream of beating me youd better wake up and apologize' ; git push
+git add . ; git commit -m 'Its not bragging if you can back it up' ; git push
