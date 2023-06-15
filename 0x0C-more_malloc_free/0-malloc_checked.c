@@ -11,7 +11,7 @@ void *malloc_checked(unsigned int b)
 	char *allocate;
 
 	allocate = malloc(b);
-	if (allocate = NULL)
+	if (allocate == NULL)
 	{
 		exit(98);
 	}
