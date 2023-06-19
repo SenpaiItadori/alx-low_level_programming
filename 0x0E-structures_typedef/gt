@@ -1,2 +1,2 @@
 #!/bin/bash
-git add .; git commit -m 'A dog is the only thing on earth that loves you more than you love yourself' ; git push
+git add .; git commit -m 'A dog will teach you unconditional love' ; git push
