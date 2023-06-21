@@ -22,18 +22,18 @@ int main(int argc, char *argv[])
 
 	b = atoi(argv[i]);
 
-	if (bytes < 0)
+	if (b < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
 
-	for (index = 0; index < bytes; index++)
+	for (i = 0; i < b; i++)
 	{
 		opcode = *(unsigned char)address;
 		printf("%.2x", opcode);
 
-		if (index == bytes - 1)
+		if (i == b - 1)
 			continue;
 
 		printf(" ");
