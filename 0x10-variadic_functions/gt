@@ -1,0 +1,2 @@
+#!/bin/bash
+git add .; git commit -m 'Beauty is variable, ugliness is constant'; git push
