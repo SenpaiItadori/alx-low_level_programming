@@ -1,2 +1,2 @@
 #!/bin/bash
-git add .; git commit -m 'One womans constant is another womans variable'; git push
+git add .; git commit -m 'To be is a to be the value of a variable'; git push
