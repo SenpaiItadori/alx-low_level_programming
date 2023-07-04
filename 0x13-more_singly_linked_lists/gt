@@ -1,2 +1,2 @@
 #!/bin/bash
-git add . ; git commit -m 'delete at index'; git push
+git add . ; git commit -m 'reverse linked list'; git push
