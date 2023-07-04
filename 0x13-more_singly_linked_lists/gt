@@ -1,2 +1,2 @@
 #!/bin/bash
-git add . ; git commit -m 'Free'; git push
+git add . ; git commit -m ' Pop'; git push
