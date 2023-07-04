@@ -1,2 +1,2 @@
 #!/bin/bash
-git add . ; git commit -m 'Insert'; git push
+git add . ; git commit -m 'delete at index'; git push
