@@ -1,13 +1,13 @@
 #include "lists.h"
 
 /**
- * free_list - fress a list_t list
+ * free_listint - fress a listint_t list
  * @head: the list to be freed
  */
 
-void free_list(list_t *head)
+void free_listint(listint_t *head)
 {
-	list_t *yes;
+	listint_t *yes;
 
 	while (head)
 	{
