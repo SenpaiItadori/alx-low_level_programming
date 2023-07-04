@@ -5,15 +5,15 @@
  * @head: the list to be freed
  */
 
-void free_listint(listint_t *head)
+void free_listint2(listint_t **head)
 {
 	listint_t *yes;
 
-	while (head)
+	while (*head)
 	{
-		yes = head->next;
-		free(head);
-		head = yes;
+		yes = (*head)->next;
+		free(*head);
+		(*head) = yes;
 	}
 	head = NULL;
 }
