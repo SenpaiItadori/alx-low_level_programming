@@ -1,2 +1,0 @@
-#!/bin/bash
-git add .; git commit -m 'To hell with circumstances; I create opportunities'; git push
