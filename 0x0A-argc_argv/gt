@@ -1,2 +1,0 @@
-#!/bin/bash
-git add . ; git commit -m 'Minimal Number of Coins for Change' ; git push
