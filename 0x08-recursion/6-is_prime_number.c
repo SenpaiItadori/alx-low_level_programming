@@ -21,7 +21,7 @@ int is_prime_number(int n)
  * Return: 1 is n is prime, otherwise 0
  */
 
-int prime_number_math(int n , int i)
+int prime_number_math(int n, int i)
 {
 	if (i == 1)
 		return (1);
