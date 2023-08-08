@@ -13,20 +13,19 @@ char *str_concat(char *s1, char *s2)
 	char *s3;
 	unsigned int i = 0, j = 0, k = 0, size, n = 0;
 
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
-
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	while (s1[j])
-	{
 		j++;
-	}
 	while (s2[k])
 	{
 		k++;
 	}
 
 	size = j + k;
-	s3 = malloc(sizeof(char) * size);
+	s3 = malloc(sizeof(char) * (size + 1));
 	if (s3 == NULL)
 		return (NULL);
 
