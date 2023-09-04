@@ -20,10 +20,9 @@ int append_text_to_file(const char *filename, char *text_content)
 	fd = open(filename, O_WRONLY | O_APPEND);
 	while (text_content[i])
 		i++;
-	if (i => 0)
-	{
-		bytes = write(fd, text_content, i);
-	}
+
+	bytes = write(fd, text_content, i);
+
 	if (fd < 0 || bytes == -1)
 		return (-1);
 
