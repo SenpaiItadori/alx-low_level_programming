@@ -1,1 +1,1 @@
-if else while ya bish 
+This folder is about variables if else and while.
