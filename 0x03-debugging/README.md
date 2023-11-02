@@ -1,1 +1,1 @@
-debugging in c ya bish
+This folder s about debugging. You know
