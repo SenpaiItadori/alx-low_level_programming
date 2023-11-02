@@ -1,2 +1,1 @@
-more nested loops
-fucking hell lol
+Even more practice with nested loops and functions
