@@ -1,21 +1,15 @@
 #include "main.h"
 
 /**
- * puts2 - prints every other char of a string then \n
- * @str: the string
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-
-void puts2(char *str)
+int main(void)
 {
-	int i, len = 0;
+    char *str;
 
-	while (str[len])
-		len++;
-
-	for (i = 0; i < len; i++)
-	{
-		_putchar(str[i])
-		i++;
-	}
-	_putchar('\n');
+    str = "0123456789";
+    puts2(str);
+    return (0);
 }
