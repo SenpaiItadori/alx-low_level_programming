@@ -1,14 +1,14 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 
 /**
- * _strcat - appends string src to string dest
- * @dest: the string to be extended
- * @src: the string to append
- * Return: the appended string
+ * _strcat - concatenates 2 strings
+ * @dest: the string to be concatenated
+ * @src: the concatenater
+ *
+ * Return: the full concatenated string
  */
+
 char *_strcat(char *dest, char *src)
 {
-	return (strcat(dest, src));
+	return strcat(dest, src);
 }
