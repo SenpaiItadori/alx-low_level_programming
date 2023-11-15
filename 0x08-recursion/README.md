@@ -1,2 +1,1 @@
-this folder is about recursion
-For like the third time .. LOL
+Using recursiohn to solve tem problems for the first time ever.

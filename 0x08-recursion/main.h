@@ -1,10 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <string.h>
+#include <stdlib.h>
 
 void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);
@@ -16,7 +16,7 @@ int is_prime_number(int n);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int _putchar(char c);
-int math(int n , int i);
-int prime_number_math(int n, int i);
+int _s_root(int num, int start);
+int seeker(int num, int start);
 
 #endif
