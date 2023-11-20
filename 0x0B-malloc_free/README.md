@@ -1,1 +1,1 @@
-First go at the dynamically allocated memory
+Dynamic memory allocation  is the prime content of this project folder
