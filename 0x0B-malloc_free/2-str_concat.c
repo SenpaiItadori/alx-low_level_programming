@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 	while (s2[sizes2])
 		sizes2++;
 
-	size = sizes1 + sizes2;
+	size = sizes1 + sizes2 + 1;
 
 	s3 = malloc(size);
 
