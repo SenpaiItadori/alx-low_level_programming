@@ -11,15 +11,16 @@
 char *argstostr(int ac, char **av)
 {
 	int i, num, size = 0, k, j;
-	char *arr, *str;
+	char *arr, *str, *src;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
 	for (i = 0; i < ac; i++)
 	{
+		src = av[i];
 		num = 0;
-		while (av[num])
+		while (src[num])
 		{
 			num++;
 		}
@@ -31,17 +32,18 @@ char *argstostr(int ac, char **av)
 	if (arr == NULL)
 		return (NULL);
 
-	for (i = 0; i < ac; i++)
+	for (j = 0; j < size; j++)
 	{
-		str = av[i];
-		for (j = 0; j < size; j++)
+		for (i = 0; i < ac; i++)
 		{
+			str = av[i];
 			for (k = 0; str[k] != '\0'; k++)
 			{
 				arr[j] = str[k];
 				j++;
 			}
 			arr[j] = '\n';
+			j++;
 		}
 	}
 	arr[size] = '\0';
