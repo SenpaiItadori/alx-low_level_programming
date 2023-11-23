@@ -32,11 +32,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			if (i <= len1)
 				s3[i] = s1[i];
-			if (i >= len1)
-			{
-				s3[i] = s2[k];
-				k++;
-			}
+			else
+				s3[i] = s2[i - len1];
 		}
 	}
 	else
@@ -51,7 +48,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 				s3[i] = s1[i];
 			if (i >= len1)
 			{
-				s3[i] = s2[i - len1];
+				s3[i] = s2[k];
 				k++;
 			}
 		}
