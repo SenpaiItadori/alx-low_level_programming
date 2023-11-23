@@ -1,18 +1,20 @@
 #include "main.h"
 
 /**
- * malloc_checked - allocates mem using malloc
- * @b: the size of the allocated mem
- * Return: a pointer to the allocated space in mem
+ * malloc_checked - allocates memory usigng malloc
+ * @b: the size fo the allocated memory
+ *
+ * Return: a pointer to the allocated memory
  */
 
 void *malloc_checked(unsigned int b)
 {
-	char *str;
+	void *point = malloc(b);
 
-	str = malloc(b);
-	if (str == NULL)
+	if (!point)
+	{
 		exit(98);
+	}
 
-	return (str);
+	return (point);
 }
