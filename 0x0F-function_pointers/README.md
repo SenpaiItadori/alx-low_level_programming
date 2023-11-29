@@ -1,2 +1,1 @@
-This folder s about function pointers
-Lets get it on
+This folder is about function pointers by Me out here
