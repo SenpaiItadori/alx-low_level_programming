@@ -1,1 +1,1 @@
-This folder is about linked lists......Singly linked lists
+This folder is about singly linked lists
