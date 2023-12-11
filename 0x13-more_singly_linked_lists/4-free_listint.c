@@ -2,21 +2,20 @@
 
 /**
  * free_listint - frees a listint_t list
- * @head: a pointer to the list
+ * @head: the listint_t linked list
+ *
  */
 
 void free_listint(listint_t *head)
 {
-	listint_t *anx;
+	listint_t *curr;
 
-	if (head == NULL)
-		return;
-
-	while (head)
+	curr = head->next;
+	while (curr)
 	{
-		anx = head->next;
+		curr = head->next;
 		free(head);
-		head = anx;
+		head = curr;
 	}
 
 	head = NULL;
