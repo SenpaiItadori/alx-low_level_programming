@@ -1,4 +1,4 @@
-#include "hash_tables.c"
+#include "hash_tables.h"
 
 /**
  * hash_table_set - adds an element to the hash table
@@ -15,7 +15,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int position;
 	hash_node_t *curr, *tmp;
 
-	if (key == "" || key = NULL)
+	if (strlen(key) == 0 || key == NULL)
 		return (0);
 	position = key_index(key, ht->size);
 
