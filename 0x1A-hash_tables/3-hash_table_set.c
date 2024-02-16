@@ -24,22 +24,22 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	position = key_index((const unsigned char *)key, ht->size);
-	
+
 	for (i = position; ht->array[i]; i++)
 	{
 		if (strcmp(ht->array[i]->key, key) == 0)
-			{
-				free(ht->array[i]->value);
-				ht->array[i]->value = cpy;
-				return (1);
-			}
+		{
+			free(ht->array[i]->value);
+			ht->array[i]->value = cpy;
+			return (1);
+		}
 	}
 	tmp = ht->array[position];
 	curr = malloc(sizeof(hash_node_t));
 	if (curr == NULL)
 		return (0);
-	
-	curr->key = strdup(key);
+
+	curr->key = (char *)key;
 	curr->value = cpy;
 	curr->next = NULL;
 
