@@ -39,7 +39,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (curr == NULL)
 		return (0);
 
-	curr->key = (char *)key;
+	curr->key = strdup(key);
 	curr->value = cpy;
 	curr->next = NULL;
 
@@ -49,5 +49,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		tmp = tmp->next;
 
 	tmp = curr;
+	ht->array[position] = tmp;
 	return (1);
 }
