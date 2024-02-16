@@ -22,7 +22,7 @@ void hash_table_print(const hash_table_t *ht)
 			if (flag == 1)
 				printf(", ");
 			curr = ht->array[i];
-			while(curr != NULL)
+			while (curr != NULL)
 			{
 				printf("'%s': '%s'", curr->key, curr->value);
 
