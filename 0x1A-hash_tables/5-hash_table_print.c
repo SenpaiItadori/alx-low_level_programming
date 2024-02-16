@@ -13,9 +13,9 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned char flag = 0;
 
 	if (ht == NULL)
-		return (0);
+		return;
 	printf("{");
-	for (i = 0, i < ht->size; i++)
+	for (i = 0; i < ht->size; i++)
 	{
 		if (ht->array[i] != NULL)
 		{
@@ -28,9 +28,10 @@ void hash_table_print(const hash_table_t *ht)
 
 				curr = curr->next;
 				if (curr != NULL)
-					printf(", ")
+					printf(", ");
 			}
 			flag = 1;
 		}
 	}
+	printf("}\n");
 }
